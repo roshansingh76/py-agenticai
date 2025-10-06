@@ -30,7 +30,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-
       # 4️⃣ Build and push Docker image with dynamic tags
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
