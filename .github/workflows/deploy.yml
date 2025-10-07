@@ -54,7 +54,6 @@ jobs:
 
             # Pull latest image from Docker Hub
             docker compose pull
-
             # Restart containers with new image
             docker compose up -d --remove-orphans
 
