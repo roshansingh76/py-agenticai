@@ -9,6 +9,9 @@ on:
 env:
   IMAGE_NAME: py-agenticai
   REGISTRY: docker.io
+  AUTO_DEPLOY: true
+  COMMIT_SHA: ${{ github.sha }}
+  DEPLOY_ENV: production
 
 jobs:
   build-and-deploy:
