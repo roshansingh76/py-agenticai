@@ -62,7 +62,6 @@ jobs:
       - name: Delete old Docker Hub images
         run: |
           REPO="${{ secrets.DOCKERHUB_USERNAME }}/py-agenticai"
-
           # Get JWT token for Docker Hub API
           TOKEN=$(curl -s -H "Content-Type: application/json" \
             -X POST -d '{"username":"'"${{ secrets.DOCKERHUB_USERNAME }}"'","password":"'"${{ secrets.DOCKERHUB_TOKEN }}"'"}' \
