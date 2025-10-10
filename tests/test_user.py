@@ -6,11 +6,15 @@ from src.main import app
 def client():
     return TestClient(app)
 
-def test_create_me(client):
-    payload = {"name": "Apple", "price": 1.99}
-    response = client.post("/items/", json=payload)
-    
+
+def test_user_me(client):
+    response = client.get("/agenticai/api/v1/user/me")
     assert response.status_code == 200
-    assert response.json() == {"item_name": "Apple", "item_price": 1.99}
+    assert response.json() == {"user_id": "the current user test pipeline"}
+
+def test_user_login(client):
+    response = client.get("/agenticai/api/v1/user/login")
+    assert response.status_code == 200
+    assert response.json() == {"user_id": "the current user login  "}
 
 
