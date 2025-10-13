@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential libffi-dev libssl-dev python3-dev sqlite3 pkg-config curl \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /var/www/html/py-agenticai
+WORKDIR /app
 
 COPY requirements.txt .
 
@@ -18,11 +18,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 COPY . .
 
-RUN mkdir -p ./chroma_db && \
-    useradd -m appuser && \
-    chown -R appuser:appuser ./chroma_db
 
-USER appuser
 
 EXPOSE 8000
 

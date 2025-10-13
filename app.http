@@ -1,3 +1,3 @@
 ### Root route
-GET http://127.0.0.1:8000/agenticai/api/v1/user/me
+GET http://localhost:8000/agenticai/api/v1/user/me
 
