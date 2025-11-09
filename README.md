@@ -27,17 +27,33 @@ python3 -m pytest tests/ -v
 
 ### Build and Run
 ```bash
+# Using docker compose (recommended)
+docker compose up -d
+
+# Or using docker-compose
 docker-compose up -d
 ```
 
 ### View Logs
 ```bash
-docker-compose logs -f
+docker compose logs -f
 ```
 
 ### Stop
 ```bash
-docker-compose down
+docker compose down
+```
+
+### Manual Docker Build
+```bash
+# Build image
+docker build -t py-agenticai:latest .
+
+# Run container
+docker run -d -p 8000:8000 \
+  -e OPENAI_API_KEY=your_key \
+  --name py-agenticai \
+  py-agenticai:latest
 ```
 
 ## 📡 API Endpoints
