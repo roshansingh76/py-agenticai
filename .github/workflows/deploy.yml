@@ -22,7 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Get short Git commit SHA
+      # 2️⃣ Get short Git commit SHAfirst
       - name: Set Git commit SHA
         id: gitinfo
         run: echo "COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV

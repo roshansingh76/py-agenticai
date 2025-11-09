@@ -4,21 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
+dist/
+build/
 
 # Virtual Environment
 venv/
@@ -26,7 +14,7 @@ env/
 ENV/
 .venv
 
-# Environment Variables
+# Environment
 .env
 .env.local
 
@@ -35,7 +23,6 @@ ENV/
 .idea/
 *.swp
 *.swo
-*~
 
 # Testing
 .pytest_cache/
@@ -51,6 +38,21 @@ logs/
 .DS_Store
 Thumbs.db
 
-# Project specific
-*.db
-*.sqlite
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+!README.md
+
+# Capstone (if not needed in production)
+capstone/
+
+# Output (generated at runtime)
+output/
+
+# Test files
+test_*.py
+*_test.py
+tests/
