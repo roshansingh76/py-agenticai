@@ -1,21 +1,29 @@
-version: "3.9"
-
 services:
-  py-agenticai:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: py-agenticai
     ports:
       - "8000:8000"
-    volumes:
-      - .:/var/www/html/py-agenticai:delegated
-      - ./chroma_db:/var/www/html/py-agenticai/chroma_db
-      - py_cache:/root/.cache/pip  # pip cache between rebuilds
     environment:
-      - PYTHONUNBUFFERED=1
-      - PYTHONDONTWRITEBYTECODE=1
-    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - MODEL_NAME=${MODEL_NAME:-gpt-4o-mini}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      - ./data:/app/data:ro
+      - ./output:/app/output
+      - ./.env:/app/.env:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - app-network
 
-volumes:
-  py_cache:
+networks:
+  app-network:
+    driver: bridge

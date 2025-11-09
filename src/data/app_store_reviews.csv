@@ -1,0 +1,31 @@
+review_id,platform,rating,review_text,user_name,date,app_version
+R001,Google Play,1,"App crashes every time I try to upload a photo. This started after the latest update. Using Samsung Galaxy S21, Android 13.",john_doe,2024-01-15,2.1.3
+R002,App Store,5,"Amazing app! The new dark mode feature is exactly what I needed. Works perfectly on my iPhone 14.",sarah_smith,2024-01-16,2.1.3
+R003,Google Play,2,"Can't login since update. Keep getting 'Invalid credentials' error even though my password is correct. Very frustrating!",mike_jones,2024-01-16,2.1.3
+R004,App Store,4,"Would love to see a calendar integration feature. It would make scheduling so much easier!",emma_wilson,2024-01-17,2.1.2
+R005,Google Play,1,"Data sync not working at all. Lost all my notes from last week. This is unacceptable!",alex_brown,2024-01-17,2.1.3
+R006,App Store,5,"Love the new feature! Best productivity app I've used. Highly recommend to everyone.",lisa_garcia,2024-01-18,2.1.3
+R007,Google Play,3,"Please add offline mode. I travel a lot and need to access my data without internet.",david_miller,2024-01-18,2.1.2
+R008,App Store,1,"App is extremely slow since last update. Takes 30 seconds just to open. iPhone 12 Pro, iOS 17.",jennifer_davis,2024-01-19,2.1.3
+R009,Google Play,2,"Too expensive for what it offers. $9.99/month is way too much. Consider lowering the price.",robert_martinez,2024-01-19,2.1.2
+R010,App Store,4,"Great app but missing export to PDF feature. Would be perfect with that addition.",maria_rodriguez,2024-01-20,2.1.3
+R011,Google Play,1,"Constant crashes when switching between tabs. Pixel 7, Android 14. Please fix ASAP!",chris_anderson,2024-01-20,2.1.3
+R012,App Store,5,"Works perfectly! No bugs, great UI, excellent customer support. Worth every penny.",amanda_taylor,2024-01-21,2.1.3
+R013,Google Play,3,"Would be nice to have widget support for quick access from home screen.",kevin_thomas,2024-01-21,2.1.2
+R014,App Store,1,"App deleted all my data after update. No backup option available. Lost months of work!",jessica_jackson,2024-01-22,2.1.3
+R015,Google Play,2,"Poor customer service. Sent 3 emails about my issue, no response yet. Very disappointed.",daniel_white,2024-01-22,2.1.2
+R016,App Store,5,"Incredible update! The new collaboration features are game-changing. Thank you!",michelle_harris,2024-01-23,2.1.3
+R017,Google Play,4,"Please add biometric authentication for better security. Face ID or fingerprint would be great.",brian_martin,2024-01-23,2.1.2
+R018,App Store,1,"Cannot attach files anymore. Error message: 'File format not supported' for all file types.",laura_thompson,2024-01-24,2.1.3
+R019,Google Play,3,"App needs better search functionality. Current search is too basic and slow.",steven_garcia,2024-01-24,2.1.2
+R020,App Store,1,"Battery drain is insane! App uses 40% battery in 2 hours. iPhone 13, iOS 17.2.",nancy_martinez,2024-01-25,2.1.3
+R021,Google Play,5,"Best app ever! Simple, intuitive, and powerful. Exactly what I was looking for.",paul_robinson,2024-01-25,2.1.3
+R022,App Store,2,"Subscription model is confusing. Too many tiers, unclear what each includes.",karen_clark,2024-01-26,2.1.2
+R023,Google Play,4,"Would love to see integration with Google Drive and Dropbox for cloud storage.",george_rodriguez,2024-01-26,2.1.2
+R024,App Store,1,"App won't open at all after iOS 17.3 update. Just shows white screen then crashes.",betty_lewis,2024-01-27,2.1.3
+R025,Google Play,1,"SPAM: Buy cheap watches at www.fakewatches.com! Best prices guaranteed!!!",spammer123,2024-01-27,2.1.2
+R026,App Store,5,"Outstanding app! The team really listens to user feedback. Keep up the great work!",richard_lee,2024-01-28,2.1.3
+R027,Google Play,3,"Please add dark theme for OLED screens. Current dark mode is not true black.",helen_walker,2024-01-28,2.1.2
+R028,App Store,1,"Notifications not working. Missing important reminders. iPad Pro, iPadOS 17.",thomas_hall,2024-01-29,2.1.3
+R029,Google Play,4,"Great app! Would be perfect with recurring task templates feature.",sandra_allen,2024-01-29,2.1.2
+R030,App Store,1,"asdfghjkl qwertyuiop zxcvbnm random text here nothing useful",random_user,2024-01-30,2.1.2

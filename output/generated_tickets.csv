@@ -1,0 +1,280 @@
+ticket_id,source_id,source_type,category,title,description,priority,status,assigned_to,tags,created_at,confidence
+TICK-1001,R001,review,Bug,[BUG] Application issue on Google Play,"**Original Feedback:**
+App crashes every time I try to upload a photo. Using Samsung Galaxy S21, Android 13.
+
+**Technical Details:**
+- Platform: Google Play
+- Device: Samsung Galaxy S21
+- Severity: Critical
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 1)
+",Critical,Open,Engineering Team,bug,2025-11-10 00:09:29,0.15
+TICK-1002,R002,review,Praise,[PRAISE] Positive feedback,"**Original Feedback:**
+Amazing app! The new dark mode feature is exactly what I needed. Works perfectly!
+
+
+**Source:** App Store Review (Rating: 5)
+",Low,Open,Marketing Team,praise,2025-11-10 00:09:29,0.3
+TICK-1003,R003,review,Bug,[BUG] Application issue on Google Play,"**Original Feedback:**
+Can't login since update. Keep getting 'Invalid credentials' error. Very frustrating!
+
+**Technical Details:**
+- Platform: Google Play
+- Device: Unknown
+- Severity: Critical
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 2)
+",Critical,Open,Engineering Team,bug,2025-11-10 00:09:29,0.15
+TICK-1004,R004,review,Feature Request,[FEATURE] calendar integration,"**Original Feedback:**
+Would love to see a calendar integration feature. It would make scheduling easier!
+
+**Feature Details:**
+- Requested: calendar integration
+- Demand: Medium
+
+**Source:** App Store Review (Rating: 4)
+",Medium,Open,Product Team,feature-request,2025-11-10 00:09:29,0.3
+TICK-1005,R005,review,Bug,[BUG] Application issue on Google Play,"**Original Feedback:**
+Data sync not working. Lost all my notes from last week. Unacceptable!
+
+**Technical Details:**
+- Platform: Google Play
+- Device: Unknown
+- Severity: Critical
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 1)
+",Critical,Open,Engineering Team,bug,2025-11-10 00:09:29,0.15
+TICK-1006,R006,review,Praise,[PRAISE] Positive feedback,"**Original Feedback:**
+Love the new feature! Best productivity app I've used.
+
+
+**Source:** App Store Review (Rating: 5)
+",Low,Open,Marketing Team,praise,2025-11-10 00:09:29,0.3
+TICK-1007,R007,review,Feature Request,[FEATURE] offline mode,"**Original Feedback:**
+Please add offline mode. I travel a lot and need access without internet.
+
+**Feature Details:**
+- Requested: offline mode
+- Demand: Medium
+
+**Source:** App Store Review (Rating: 3)
+",Medium,Open,Product Team,feature-request,2025-11-10 00:09:29,0.3
+TICK-1008,R008,review,Bug,[BUG] Application issue on App Store,"**Original Feedback:**
+App is extremely slow since last update. Takes 30 seconds to open. iPhone 12 Pro.
+
+**Technical Details:**
+- Platform: App Store
+- Device: iPhone 12 Pro
+- Severity: High
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 1)
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.15
+TICK-1009,R009,review,Complaint,[FEEDBACK] User complaint,"**Original Feedback:**
+Too expensive for what it offers. $9.99/month is way too much.
+
+
+**Source:** App Store Review (Rating: 2)
+",Low,Open,Customer Success Team,complaint,2025-11-10 00:09:29,0.1
+TICK-1010,R010,review,Praise,[PRAISE] Positive feedback,"**Original Feedback:**
+Great app but missing export to PDF feature.
+
+
+**Source:** App Store Review (Rating: 4)
+",Low,Open,Marketing Team,praise,2025-11-10 00:09:29,0.15
+TICK-1011,R011,review,Bug,[BUG] Application issue on Google Play,"**Original Feedback:**
+Constant crashes when switching between tabs. Pixel 7, Android 14.
+
+**Technical Details:**
+- Platform: Google Play
+- Device: Pixel 7
+- Severity: Critical
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 1)
+",Critical,Open,Engineering Team,bug,2025-11-10 00:09:29,0.15
+TICK-1012,R012,review,Praise,[PRAISE] Positive feedback,"**Original Feedback:**
+Works perfectly! No bugs, great UI, excellent support.
+
+
+**Source:** App Store Review (Rating: 5)
+",Low,Open,Marketing Team,praise,2025-11-10 00:09:29,0.45
+TICK-1013,R013,review,Bug,[BUG] Application issue on Google Play,"**Original Feedback:**
+Would be nice to have widget support for quick access.
+
+**Technical Details:**
+- Platform: Google Play
+- Device: Unknown
+- Severity: High
+- App Version: 2.1.2
+
+**Source:** App Store Review (Rating: 3)
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.0
+TICK-1014,R014,review,Bug,[BUG] Application issue on App Store,"**Original Feedback:**
+App deleted all my data after update. No backup option. Lost months of work!
+
+**Technical Details:**
+- Platform: App Store
+- Device: Unknown
+- Severity: Critical
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 1)
+",Critical,Open,Engineering Team,bug,2025-11-10 00:09:29,0.0
+TICK-1015,R015,review,Complaint,[FEEDBACK] User complaint,"**Original Feedback:**
+Poor customer service. Sent 3 emails, no response yet.
+
+
+**Source:** App Store Review (Rating: 2)
+",Low,Open,Customer Success Team,complaint,2025-11-10 00:09:29,0.2
+TICK-1016,R016,review,Feature Request,[FEATURE] Feature request,"**Original Feedback:**
+Incredible update! The collaboration features are game-changing.
+
+**Feature Details:**
+- Requested: Feature request
+- Demand: Medium
+
+**Source:** App Store Review (Rating: 5)
+",Medium,Open,Product Team,feature-request,2025-11-10 00:09:29,0.1
+TICK-1017,R017,review,Feature Request,[FEATURE] biometric auth,"**Original Feedback:**
+Please add biometric authentication. Face ID or fingerprint would be great.
+
+**Feature Details:**
+- Requested: biometric auth
+- Demand: Medium
+
+**Source:** App Store Review (Rating: 4)
+",Medium,Open,Product Team,feature-request,2025-11-10 00:09:29,0.2
+TICK-1018,R018,review,Bug,[BUG] Application issue on App Store,"**Original Feedback:**
+Cannot attach files anymore. Error: 'File format not supported'.
+
+**Technical Details:**
+- Platform: App Store
+- Device: Unknown
+- Severity: High
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 1)
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.15
+TICK-1019,R019,review,Feature Request,[FEATURE] Feature request,"**Original Feedback:**
+App needs better search functionality. Current search is too basic.
+
+**Feature Details:**
+- Requested: Feature request
+- Demand: Medium
+
+**Source:** App Store Review (Rating: 3)
+",Medium,Open,Product Team,feature-request,2025-11-10 00:09:29,0.1
+TICK-1020,R020,review,Bug,[BUG] Application issue on App Store,"**Original Feedback:**
+Battery drain is insane! App uses 40% battery in 2 hours. iPhone 13.
+
+**Technical Details:**
+- Platform: App Store
+- Device: iPhone 13
+- Severity: High
+- App Version: 2.1.3
+
+**Source:** App Store Review (Rating: 1)
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.0
+TICK-1021,E001,email,Bug,[BUG] Application issue on Android,"**Original Feedback:**
+Hi, I'm experiencing constant crashes when uploading photos. Samsung Galaxy S21, Android 13, app version 2.1.3. Steps: 1) Open app 2) Click upload 3) Select photo 4) App crashes.
+
+**Technical Details:**
+- Platform: Android
+- Device: Samsung Galaxy S21
+- Severity: Critical
+- App Version: Unknown
+
+**Source:** Support Email
+",Critical,Open,Engineering Team,bug,2025-11-10 00:09:29,0.1
+TICK-1022,E002,email,Feature Request,[FEATURE] dark mode,"**Original Feedback:**
+Hello, I love your app! Could you add a true dark mode feature? Would be perfect for night use.
+
+**Feature Details:**
+- Requested: dark mode
+- Demand: Medium
+
+**Source:** Support Email
+",Medium,Open,Product Team,feature-request,2025-11-10 00:09:29,0.2
+TICK-1023,E003,email,Bug,[BUG] Application issue on Unknown,"**Original Feedback:**
+I CANNOT LOGIN! Keep getting 'Invalid credentials' error. I've tried resetting password twice. Need access NOW!
+
+**Technical Details:**
+- Platform: Unknown
+- Device: Unknown
+- Severity: High
+- App Version: Unknown
+
+**Source:** Support Email
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.1
+TICK-1024,E004,email,Feature Request,[FEATURE] calendar integration,"**Original Feedback:**
+I've been using your app for 6 months. Calendar integration with Google Calendar would be incredibly useful.
+
+**Feature Details:**
+- Requested: calendar integration
+- Demand: Medium
+
+**Source:** Support Email
+",Medium,Open,Product Team,feature-request,2025-11-10 00:09:29,0.1
+TICK-1025,E005,email,Bug,[BUG] Application issue on Android,"**Original Feedback:**
+HELP! All my notes from last week disappeared! Sync not working. Pixel 6, Android 13, v2.1.3. Can I recover?
+
+**Technical Details:**
+- Platform: Android
+- Device: Pixel 6
+- Severity: High
+- App Version: Unknown
+
+**Source:** Support Email
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.1
+TICK-1026,E006,email,Praise,[PRAISE] Positive feedback,"**Original Feedback:**
+Just wanted to say thank you for creating such an amazing app! The new features are fantastic.
+
+
+**Source:** Support Email
+",Low,Open,Marketing Team,praise,2025-11-10 00:09:29,0.3
+TICK-1027,E007,email,Bug,[BUG] Application issue on Unknown,"**Original Feedback:**
+I travel frequently and often don't have internet. Offline mode would be incredibly helpful.
+
+**Technical Details:**
+- Platform: Unknown
+- Device: Unknown
+- Severity: High
+- App Version: Unknown
+
+**Source:** Support Email
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.0
+TICK-1028,E008,email,Bug,[BUG] Application issue on iOS,"**Original Feedback:**
+App has become extremely slow since last update. Takes 30+ seconds to open. iPhone 12 Pro, iOS 17, v2.1.3.
+
+**Technical Details:**
+- Platform: iOS
+- Device: iPhone 12 Pro
+- Severity: High
+- App Version: Unknown
+
+**Source:** Support Email
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.1
+TICK-1029,E009,email,Bug,[BUG] Application issue on Unknown,"**Original Feedback:**
+Your pricing is too high. $9.99/month compared to competitors at $4.99. Might have to switch.
+
+**Technical Details:**
+- Platform: Unknown
+- Device: Unknown
+- Severity: High
+- App Version: Unknown
+
+**Source:** Support Email
+",High,Open,Engineering Team,bug,2025-11-10 00:09:29,0.0
+TICK-1030,E010,email,Feature Request,[FEATURE] export functionality,"**Original Feedback:**
+I really need PDF export functionality. Currently only CSV which isn't ideal for reports.
+
+**Feature Details:**
+- Requested: export functionality
+- Demand: High
+
+**Source:** Support Email
+",High,Open,Product Team,feature-request,2025-11-10 00:09:29,0.1

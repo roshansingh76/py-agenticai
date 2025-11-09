@@ -1,0 +1,21 @@
+review_id,platform,rating,review_text,user_name,date,app_version
+R001,Google Play,1,"App crashes every time I try to upload a photo. Using Samsung Galaxy S21, Android 13.",john_doe,2024-01-15,2.1.3
+R002,App Store,5,"Amazing app! The new dark mode feature is exactly what I needed. Works perfectly!",sarah_smith,2024-01-16,2.1.3
+R003,Google Play,2,"Can't login since update. Keep getting 'Invalid credentials' error. Very frustrating!",mike_jones,2024-01-16,2.1.3
+R004,App Store,4,"Would love to see a calendar integration feature. It would make scheduling easier!",emma_wilson,2024-01-17,2.1.2
+R005,Google Play,1,"Data sync not working. Lost all my notes from last week. Unacceptable!",alex_brown,2024-01-17,2.1.3
+R006,App Store,5,"Love the new feature! Best productivity app I've used.",lisa_garcia,2024-01-18,2.1.3
+R007,Google Play,3,"Please add offline mode. I travel a lot and need access without internet.",david_miller,2024-01-18,2.1.2
+R008,App Store,1,"App is extremely slow since last update. Takes 30 seconds to open. iPhone 12 Pro.",jennifer_davis,2024-01-19,2.1.3
+R009,Google Play,2,"Too expensive for what it offers. $9.99/month is way too much.",robert_martinez,2024-01-19,2.1.2
+R010,App Store,4,"Great app but missing export to PDF feature.",maria_rodriguez,2024-01-20,2.1.3
+R011,Google Play,1,"Constant crashes when switching between tabs. Pixel 7, Android 14.",chris_anderson,2024-01-20,2.1.3
+R012,App Store,5,"Works perfectly! No bugs, great UI, excellent support.",amanda_taylor,2024-01-21,2.1.3
+R013,Google Play,3,"Would be nice to have widget support for quick access.",kevin_thomas,2024-01-21,2.1.2
+R014,App Store,1,"App deleted all my data after update. No backup option. Lost months of work!",jessica_jackson,2024-01-22,2.1.3
+R015,Google Play,2,"Poor customer service. Sent 3 emails, no response yet.",daniel_white,2024-01-22,2.1.2
+R016,App Store,5,"Incredible update! The collaboration features are game-changing.",michelle_harris,2024-01-23,2.1.3
+R017,Google Play,4,"Please add biometric authentication. Face ID or fingerprint would be great.",brian_martin,2024-01-23,2.1.2
+R018,App Store,1,"Cannot attach files anymore. Error: 'File format not supported'.",laura_thompson,2024-01-24,2.1.3
+R019,Google Play,3,"App needs better search functionality. Current search is too basic.",steven_garcia,2024-01-24,2.1.2
+R020,App Store,1,"Battery drain is insane! App uses 40% battery in 2 hours. iPhone 13.",nancy_martinez,2024-01-25,2.1.3

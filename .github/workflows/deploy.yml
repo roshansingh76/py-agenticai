@@ -1,51 +1,69 @@
-name: Deploy Agentic App
+name: Deploy Py-Agentic AI
 
 on:
   push:
     branches:
       - main
-      - 'feature/**'  # optional: deploy feature branches
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: py-agenticai
   REGISTRY: docker.io
-  AUTO_DEPLOY: true
-  COMMIT_SHA: ${{ github.sha }}
-  DEPLOY_ENV: production
 
 jobs:
-  build-and-deploy:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      # 1️⃣ Checkout code
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      # 2️⃣ Get short Git commit SHA
-      - name: Set Git commit SHA
-        id: gitinfo
-        run: echo "COMMIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-      # 3️⃣ Log in to Docker Hub
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          python -m pytest tests/ -v
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
       - name: Log in to Docker Hub
-        uses: docker/login-action@v3
+        uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      # 4️⃣ Build and push Docker image with dynamic tags
       - name: Build and push Docker image
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v4
         with:
           context: .
           push: true
           tags: |
-            ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ env.COMMIT_SHA }}
-            ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+          cache-to: type=inline
 
-      # 5️⃣ Deploy to VPS via SSH + Docker Compose
-      - name: Deploy to VPS
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -54,37 +72,7 @@ jobs:
           port: 22
           script: |
             cd /var/www/html/py-agenticai
-
-            # Pull latest image from Docker Hub
             docker compose pull
-            # Restart containers with new image
             docker compose up -d --remove-orphans
-
-            # Optionally prune unused images
             docker image prune -f
-      - name: Delete old Docker Hub images
-        run: |
-          REPO="${{ secrets.DOCKERHUB_USERNAME }}/py-agenticai"
-          # Get JWT token for Docker Hub API
-          TOKEN=$(curl -s -H "Content-Type: application/json" \
-            -X POST -d '{"username":"'"${{ secrets.DOCKERHUB_USERNAME }}"'","password":"'"${{ secrets.DOCKERHUB_TOKEN }}"'"}' \
-            https://hub.docker.com/v2/users/login/ | jq -r .token)
-
-          # List tags sorted by last_updated
-          TAGS=$(curl -s -H "Authorization: JWT $TOKEN" "https://hub.docker.com/v2/repositories/$REPO/tags/?page_size=100" \
-            | jq -r '.results | sort_by(.last_updated) | .[].name')
-
-          # Keep the latest 5 tags + latest
-          KEEP_TAGS=("latest" "${{ env.COMMIT_SHA }}")
-          COUNT=0
-
-          for TAG in $TAGS; do
-            if [[ ! " ${KEEP_TAGS[@]} " =~ " ${TAG} " ]]; then
-              echo "Deleting old tag: $TAG"
-              curl -s -X DELETE -H "Authorization: JWT $TOKEN" \
-                "https://hub.docker.com/v2/repositories/$REPO/tags/$TAG/"
-              COUNT=$((COUNT+1))
-            fi
-          done
-
-          echo "Deleted $COUNT old Docker Hub tags"
+            echo "Deployment completed successfully"
